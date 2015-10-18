@@ -4,7 +4,8 @@ html, body {
     height: 100%;
 }
 body {
-    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+    /*font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;*/
+    font-family: "Avenir","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 .text-vertical-center {
     display: table-cell;
@@ -16,7 +17,7 @@ body {
     padding: 5px;
     font-size: 4.5em;
     font-weight: 700;
-	color: white;
+    color: white;
 }
 
 /* Custom Button Styles */
@@ -24,7 +25,7 @@ body {
     border-radius: 0;
     color: #fff;
     background-color: rgba(0,0,0,0.4);
-	margin: 3px;
+    margin: 3px;
 }
 .btn-dark:hover, .btn-dark:focus, .btn-dark:active {
     color: #fff;
@@ -51,8 +52,8 @@ hr.small {
     position: fixed;
     top: 0;
     right: 0;
-	width: 50px;
-	height: 50px;
+    width: 50px;
+    height: 50px;
 }
 
 /* Header */
@@ -61,34 +62,36 @@ hr.small {
     position: relative;
     width: 100%;
     height: 100%;
-    background: url(../img/bg.jpg) no-repeat center center scroll;
-	background-color: rgba(255, 255, 255, 0.3);
-	background-repeat: repeat;
-	background-size: 1.5em;
-	background-blend-mode: color;
+    /*background: url(../img/bg.jpg) no-repeat center center scroll;*/
+    background: url(http://www.wagamama.us/~/media/WagamamaMainsite/cinemagraphs/Yakitori_Duck.gif) no-repeat center center scroll;
+    background-color: rgba(255, 255, 255, 0.3);
+/*  background-repeat: repeat;
+    background-size: 1.5em;
+    background-blend-mode: color;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-	color: black;
+    color: black;*/
 }
 .picturebox{
-	width:250px;
-	height:250px;
-	border:5px solid black;
-	text-align: center;
-	background: transparent;
-	margin: auto;
+    width:250px;
+    height:250px;
+    border:5px solid black;
+    text-align: center;
+    background: transparent;
+    margin: auto;
 }
 
 
 /* instructions */
 .instructions {
     padding: 50px 0;
-	background-color: #A30000;
+    /*background-color: #A30000;*/
+    background-color: #424242;
 }
 .fa {
-	color: white;
+    color: white;
 }
 .service-item {
     margin-bottom: 30px;
@@ -96,24 +99,25 @@ hr.small {
 
 /*Results*/
 .pictureresults {
-	margin: 0;
+    margin: 0;
     padding: 0;
     font-size: 4.5em;
     font-weight: 700;
-	color: grey;
+    color: #424242;
+    text-align: center;
 }
 #pictureURL {
-	margin: 3px;
-	color: #fff;
+    margin: 3px;
+    color: #fff;
     background-color: rgba(0,0,0,0.4);
 }
 
 /* Footer */
 footer {
     padding: 25px 0;
-	color: white;
-	background-color: grey;
+    color: white;
+    background-color: #424242;
 }
 .text-muted {
-	color: white;
+    color: white;
 }
