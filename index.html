@@ -10,7 +10,6 @@
 		<!-- CSS from bootstrap -->
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link href="css/stylish-portfolio.css" rel="stylesheet">
-		<script src="js/img-tagging.js" type="text/javascript"></script>
 		
 		<!-- Custom Fonts -->
 		<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -120,5 +119,32 @@
 		<script src="js/jquery.js"></script>
 		<!-- Bootstrap Core JavaScript -->
 		<script src="js/bootstrap.min.js"></script>
+		<script>
+
+			function getPicInfo() {
+			  $.ajax({
+			  	dataType: 'json',
+			    url: 'https://api.clarifai.com/v1/tag/',
+			    type: 'GET',
+			    beforeSend: function(xhr) {
+			      xhr.setRequestHeader('Authorization', 'Bearer 7b9nddBbF6iv1vI1vdxLcjiBVtg5eW');
+			    },
+			    data: {
+			      url: 'http://www.clarifai.com/img/metro-north.jpg'
+			    },
+			    success: function (response) { 
+			      console.log(response);
+			      console.log(response.results[0].result.tag.classes[0]);
+			    },
+			    error: function (err) { 
+			      console.log(err);
+			    },
+			  });
+			}
+			getPicInfo();
+
+
+
+		</script>
 	</body>
 </html>
