@@ -85,7 +85,7 @@ hr.small {
 /* instructions */
 .instructions {
     padding: 50px 0;
-	background-color: black;
+	background-color: #A30000;
 }
 .fa {
 	color: white;
@@ -100,8 +100,7 @@ hr.small {
     padding: 0;
     font-size: 4.5em;
     font-weight: 700;
-	color: black;
-	border: 7px solid grey;
+	color: grey;
 }
 #pictureURL {
 	margin: 3px;
@@ -111,6 +110,10 @@ hr.small {
 
 /* Footer */
 footer {
-    padding: 50px 0;
-	color: black;
+    padding: 25px 0;
+	color: white;
+	background-color: grey;
+}
+.text-muted {
+	color: white;
 }
