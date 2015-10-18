@@ -12,10 +12,11 @@ body {
     vertical-align: middle;
 }
 .text-vertical-center h1 {
-    margin: 0;
-    padding: 0;
+    margin: 10px;
+    padding: 5px;
     font-size: 4.5em;
     font-weight: 700;
+	color: white;
 }
 
 /* Custom Button Styles */
@@ -23,6 +24,7 @@ body {
     border-radius: 0;
     color: #fff;
     background-color: rgba(0,0,0,0.4);
+	margin: 3px;
 }
 .btn-dark:hover, .btn-dark:focus, .btn-dark:active {
     color: #fff;
@@ -44,7 +46,7 @@ hr.small {
 }
 
 /* Nav */
-#menu-toggle {
+#nav {
     z-index: 1;
     position: fixed;
     top: 0;
@@ -68,6 +70,7 @@ hr.small {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+	color: black;
 }
 .picturebox{
 	width:250px;
@@ -99,6 +102,11 @@ hr.small {
     font-weight: 700;
 	color: black;
 	border: 7px solid grey;
+}
+#pictureURL {
+	margin: 3px;
+	color: #fff;
+    background-color: rgba(0,0,0,0.4);
 }
 
 /* Footer */
