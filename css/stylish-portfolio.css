@@ -1,12 +1,5 @@
-/*!
- * Start Bootstrap - Stylish Portfolio Bootstrap Theme (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
-
 /* Global Styles */
-html,
-body {
+html, body {
     width: 100%;
     height: 100%;
 }
@@ -31,9 +24,7 @@ body {
     color: #fff;
     background-color: rgba(0,0,0,0.4);
 }
-.btn-dark:hover,
-.btn-dark:focus,
-.btn-dark:active {
+.btn-dark:hover, .btn-dark:focus, .btn-dark:active {
     color: #fff;
     background-color: rgba(0,0,0,0.7);
 }
@@ -42,9 +33,7 @@ body {
     color: #333;
     background-color: rgb(255,255,255);
 }
-.btn-light:hover,
-.btn-light:focus,
-.btn-light:active {
+.btn-light:hover, .btn-light:focus, .btn-light:active {
     color: #333;
     background-color: rgba(255,255,255,0.8);
 }
@@ -52,6 +41,16 @@ body {
 /* Custom Horizontal Rule */
 hr.small {
     max-width: 100px;
+}
+
+/* Nav */
+#menu-toggle {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    right: 0;
+	width: 50px;
+	height: 50px;
 }
 
 /* Header */
@@ -79,6 +78,7 @@ hr.small {
 	margin: auto;
 }
 
+
 /* instructions */
 .instructions {
     padding: 50px 0;
@@ -91,20 +91,18 @@ hr.small {
     margin-bottom: 30px;
 }
 
+/*Results*/
+.pictureresults {
+	margin: 0;
+    padding: 0;
+    font-size: 4.5em;
+    font-weight: 700;
+	color: black;
+	border: 7px solid grey;
+}
+
 /* Footer */
 footer {
     padding: 50px 0;
 	color: black;
-}
-
-/* Nav */
-#menu-toggle {
-    z-index: 1;
-    position: fixed;
-    top: 0;
-    right: 0;
-}
-
-.toggle {
-    margin: 5px 5px 0 0;
 }

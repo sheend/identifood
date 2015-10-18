@@ -1,120 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Identifood</title>
 
-    <title>Identifood</title>
+		<!-- CSS from bootstrap -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/stylish-portfolio.css" rel="stylesheet">
+		<!-- Custom Fonts -->
+		<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+		<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+	</head>
 
-    <!-- CSS from bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/stylish-portfolio.css" rel="stylesheet">
-    <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-
-</head>
-
-<body>
-    <!-- Navigation -->
-    <a id="menu-toggle" href="#instructions" class="btn btn-dark btn-lg toggle"><i class="fa fa-question-circle fa-stack-1x text-primary"></i></a>
-	
-    <!-- Header -->
-    <header id="top" class="header">
-        <div class="text-vertical-center">
-            <h1>IDENTIFOOD</h1>
-			<div class="picturebox">
-			</div>
-            <br>
-            <a href="#instructions" class="btn btn-dark btn-lg">Identify Food</a>
-        </div>
-    </header>
+	<body>
+		<!-- Navigation -->
+		<a id="menu-toggle" href="#instructions" class="btn btn-dark btn-lg toggle"><i class="fa fa-question-circle fa-stack-1x text-primary"></i></a>
 		
-    <!-- instructions -->
-    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
-    <section id="instructions" class="instructions bg-primary">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-lg-10 col-lg-offset-1">
-                    <h2>Instructions</h2>
-                    <hr class="small">
-                    <div class="row">
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-									<i class="fa fa-plus fa-stack-1x text-primary"></i>
+		<!-- Header -->
+		<header id="top" class="header">
+			<div class="text-vertical-center">
+				<h1>IDENTIFOOD</h1>
+				<div class="picturebox">
+					
+				</div>
+				<form method="get" id="form1">
+					<input id="pictureURL" type="text" name="picURL">
+					<!--<a  href="#results" class="btn btn-dark btn-lg">Identify Food</a>-->
+					<button id="search" type="submit" form="form1" value="Submit">Identify Food</button>
+				</form>
+			</div>
+		</header>
+			
+		<!-- instructions -->
+		<section id="instructions" class="instructions bg-primary">
+			<div class="container">
+				<div class="row text-center">
+					<div class="col-lg-10 col-lg-offset-1">
+						<h2>Instructions</h2>
+						<hr class="small">
+						<div class="row">
+							<div class="col-md-3 col-sm-6">
+								<div class="service-item">
+									<span class="fa-stack fa-4x">
+										<i class="fa fa-keyboard-o fa-stack-1x text-primary"></i>
+									</span>
+									<h4>
+										<strong>Step 1</strong>
+									</h4>
+									<p>Type in the url of an image.</p>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<div class="service-item">
+									<span class="fa-stack fa-4x">
+									<i class="fa fa-location-arrow fa-stack-1x text-primary"></i>
 								</span>
-                                <h4>
-                                    <strong>Step 1</strong>
-                                </h4>
-                                <p>Hover over the empty box and click on the upload button.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-location-arrow fa-stack-1x text-primary"></i>
-                            </span>
-                                <h4>
-                                    <strong>Step 2</strong>
-                                </h4>
-                                <p>Find your picture and select it.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-clock-o fa-stack-1x text-primary"></i>
-                            </span>
-                                <h4>
-                                    <strong>Step 3</strong>
-                                </h4>
-                                <p>Click the "Identify Food" button and wait for the result.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-repeat fa-stack-1x text-primary"></i>
-                            </span>
-                                <h4>
-                                    <strong>Step 4</strong>
-                                </h4>
-                                <p>Look up another food starting at step 1.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.row (nested) -->
-                </div>
-                <!-- /.col-lg-10 -->
-            </div>
-            <!-- /.row -->
-        </div>
-        <!-- /.container -->
-    </section>
+									<h4>
+										<strong>Step 2</strong>
+									</h4>
+									<p>Click the "Identify Food" button.</p>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<div class="service-item">
+									<span class="fa-stack fa-4x">
+									<i class="fa fa-clock-o fa-stack-1x text-primary"></i>
+								</span>
+									<h4>
+										<strong>Step 3</strong>
+									</h4>
+									<p>Wait for the result.</p>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<div class="service-item">
+									<span class="fa-stack fa-4x">
+									<i class="fa fa-repeat fa-stack-1x text-primary"></i>
+								</span>
+									<h4>
+										<strong>Step 4</strong>
+									</h4>
+									<p>Look up another food starting at step 1.</p>
+								</div>
+							</div>
+						</div>
+						<!-- /.row (nested) -->
+					</div>
+					<!-- /.col-lg-10 -->
+				</div>
+				<!-- /.row -->
+			</div>
+			<!-- /.container -->
+		</section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h4><strong>Identifood</strong>
-                    </h4>
-                    <p>know what you eat</p>
-                    <hr class="small">
-                    <p class="text-muted">Copyright &copy; Identifood 2015</p>
-                </div>
-            </div>
-        </div>
-    </footer>
+		<!-- results -->
+		<section id="results" class="pictureresults">
+			<div class="container">
+				<p>This is the results div</p>
+			</div>
+		</section>
+		
+		<!-- Footer -->
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-10 col-lg-offset-1 text-center">
+						<h4><strong>Identifood</strong>
+						</h4>
+						<p>know what you eat</p>
+						<hr class="small">
+						<p class="text-muted">Copyright &copy; Identifood 2015</p>
+					</div>
+				</div>
+			</div>
+		</footer>
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- Custom Theme JavaScript -->
+		<!-- jQuery -->
+		<script src="js/jquery.js"></script>
+		<!-- Bootstrap Core JavaScript -->
+		<script src="js/bootstrap.min.js"></script>
 
-</body>
+	</body>
 </html>
