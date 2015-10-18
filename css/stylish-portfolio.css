@@ -156,6 +156,10 @@ hr.small {
     width: 100%;
     height: 100%;
     background: url(../img/bg.jpg) no-repeat center center scroll;
+	background-color: rgba(255, 255, 255, 0.3);
+	background-repeat: repeat;
+	background-size: 1.5em;
+	background-blend-mode: color;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
