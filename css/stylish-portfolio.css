@@ -155,11 +155,18 @@ hr.small {
     position: relative;
     width: 100%;
     height: 100%;
-    background: url(../img/bg.jpg) no-repeat center center scroll;
+	background: url(../img/foodoption2.jpg) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+	
+	-khtml-opacity:.50; 
+	-moz-opacity:.50; 
+	-ms-filter:"alpha(opacity=50)";
+	filter:alpha(opacity=50);
+	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0.5);
+	opacity:.50; 
 }
 
 /* About */
