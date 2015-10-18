@@ -155,21 +155,19 @@ hr.small {
     position: relative;
     width: 100%;
     height: 100%;
+<<<<<<< HEAD
     background: url(../img/bg.jpg) no-repeat center center scroll;
 	background-color: rgba(255, 255, 255, 0.3);
 	background-repeat: repeat;
 	background-size: 1.5em;
 	background-blend-mode: color;
+=======
+	background: url(../img/foodoption2.jpg) no-repeat center center scroll;
+>>>>>>> 1c4e376de6d11b896de995664f432dced1e3d431
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-}
-
-/* About */
-
-.about {
-    padding: 50px 0;
 }
 
 /* Services */
@@ -180,60 +178,6 @@ hr.small {
 
 .service-item {
     margin-bottom: 30px;
-}
-
-/* Callout */
-
-.callout {
-    display: table;
-    width: 100%;
-    height: 400px;
-    color: #fff;
-    background: url(../img/callout.jpg) no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
-
-/* Portfolio */
-
-.portfolio {
-    padding: 50px 0;
-}
-
-.portfolio-item {
-    margin-bottom: 30px;
-}
-
-.img-portfolio {
-    margin: 0 auto;
-}
-
-.img-portfolio:hover {
-    opacity: 0.8;
-}
-
-/* Call to Action */
-
-.call-to-action {
-    padding: 50px 0;
-}
-
-.call-to-action .btn {
-    margin: 10px;
-}
-
-/* Map */
-
-.map {
-    height: 500px;
-}
-
-@media(max-width:768px) {
-    .map {
-        height: 75%;
-    }
 }
 
 /* Footer */
