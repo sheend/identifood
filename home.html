@@ -17,19 +17,16 @@
 
 	<body>
 		<!-- Navigation -->
-		<a id="menu-toggle" href="#instructions" class="btn btn-dark btn-lg toggle"><i class="fa fa-question-circle fa-stack-1x text-primary"></i></a>
+		<a id="nav" href="#instructions" class="btn btn-dark btn-lg toggle"><i class="fa fa-question-circle fa-stack-1x text-primary"></i></a>
 		
 		<!-- Header -->
 		<header id="top" class="header">
 			<div class="text-vertical-center">
 				<h1>IDENTIFOOD</h1>
-				<div class="picturebox">
-					
-				</div>
 				<form method="get" id="form1">
 					<input id="pictureURL" type="text" name="picURL">
-					<!--<a  href="#results" class="btn btn-dark btn-lg">Identify Food</a>-->
-					<button id="search" type="submit" form="form1" value="Submit">Identify Food</button>
+					<br>
+					<button id="search" class="btn btn-dark btn-lg" type="submit" form="form1" value="Submit">Identify Food</button>
 				</form>
 			</div>
 		</header>
@@ -97,11 +94,8 @@
 		</section>
 
 		<!-- results -->
-		<div id="results" >
-			<div class="container">
+		<div id="results" class="pictureresults">
 				<p>This is the results div</p>
-			</div>
-			<p id="test">THIS IS TEST CODE TO HIGHLIGHT</p>
 		</div>
 		
 		<!-- Footer -->
@@ -111,7 +105,7 @@
 					<div class="col-lg-10 col-lg-offset-1 text-center">
 						<h4><strong>Identifood</strong>
 						</h4>
-						<p>know what you eat</p>
+						<p>know your food</p>
 						<hr class="small">
 						<p class="text-muted">Copyright &copy; Identifood 2015</p>
 					</div>
