@@ -5,23 +5,19 @@
  */
 
 /* Global Styles */
-
 html,
 body {
     width: 100%;
     height: 100%;
 }
-
 body {
     font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
-
 .text-vertical-center {
     display: table-cell;
     text-align: center;
     vertical-align: middle;
 }
-
 .text-vertical-center h1 {
     margin: 0;
     padding: 0;
@@ -30,26 +26,22 @@ body {
 }
 
 /* Custom Button Styles */
-
 .btn-dark {
     border-radius: 0;
     color: #fff;
     background-color: rgba(0,0,0,0.4);
 }
-
 .btn-dark:hover,
 .btn-dark:focus,
 .btn-dark:active {
     color: #fff;
     background-color: rgba(0,0,0,0.7);
 }
-
 .btn-light {
     border-radius: 0;
     color: #333;
     background-color: rgb(255,255,255);
 }
-
 .btn-light:hover,
 .btn-light:focus,
 .btn-light:active {
@@ -58,13 +50,11 @@ body {
 }
 
 /* Custom Horizontal Rule */
-
 hr.small {
     max-width: 100px;
 }
 
 /* Header */
-
 .header {
     display: table;
     position: relative;
@@ -80,19 +70,41 @@ hr.small {
     background-size: cover;
     -o-background-size: cover;
 }
-
-/* Services */
-
-.services {
-    padding: 50px 0;
+.picturebox{
+	width:250px;
+	height:250px;
+	border:5px solid black;
+	text-align: center;
+	background: transparent;
+	margin: auto;
 }
 
+/* instructions */
+.instructions {
+    padding: 50px 0;
+	background-color: black;
+}
+.fa {
+	color: white;
+}
 .service-item {
     margin-bottom: 30px;
 }
 
 /* Footer */
-
 footer {
-    padding: 100px 0;
+    padding: 50px 0;
+	color: black;
+}
+
+/* Nav */
+#menu-toggle {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.toggle {
+    margin: 5px 5px 0 0;
 }
