@@ -138,3 +138,6 @@ footer {
     color: white;
 }
 
+.fa-home, .fa-question-circle {
+    color: gray;
+}
