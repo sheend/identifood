@@ -55,6 +55,14 @@ hr.small {
     width: 50px;
     height: 50px;
 }
+#navhome {
+	z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+}
 
 /* Header */
 .header {
