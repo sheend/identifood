@@ -120,6 +120,14 @@ hr.small {
     background-color: rgba(0,0,0,0.4);
 }
 
+#foodpic {
+    float: left;
+}
+
+#results-append {
+    font-size: 20pt;
+}
+
 /* Footer */
 footer {
     padding: 25px 0;
@@ -130,3 +138,6 @@ footer {
     color: white;
 }
 
+.fa-home, .fa-question-circle {
+    color: gray;
+}
