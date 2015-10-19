@@ -24,20 +24,15 @@
 		<header id="top" class="header">
 			<div class="text-vertical-center">
 				<h1>IDENTIFOOD</h1>
-				<form method="get" id="form1">
-
-
 					<div class="input-group col-m-8 col-m-offset-2">
 					  <span class="input-group-addon" id="sizing-addon2">url</span>
-					  <input type="text" class="form-control" placeholder="Image" aria-describedby="sizing-addon2">
+					  <input id="userinput" type="text" class="form-control" placeholder="Image" aria-describedby="sizing-addon2">
 					</div>
 
 					<br>
 					<div class="btn-group" role="group" aria-label="...">
-					  <button id="search" type="submit" class="btn btn-default" form="form1" value="Submit">Identify Food</button>
+					  <button id="search" type="submit" class="btn btn-default" form="form1" onclick="pictureSearch()">Identify Food</button>
 					</div>
-					<!-- <button id="search" class="btn btn-dark btn-lg" type="submit" form="form1" value="Submit">Identify Food</button> -->
-				</form>
 			</div>
 		</header>
 			
@@ -105,8 +100,8 @@
 
 		<!-- results -->
 		<div id="results" class="pictureresults">
-				<div>This is the results div</div>
-				<div id="results-append"></div>
+			<div>Results:</div>
+			<div id="results-append"></div>
 		</div>
 		
 		<!-- Footer -->
@@ -131,6 +126,9 @@
 		<script>
 
 			function getPicInfo() {
+				var userurl = document.getElementById("userinput").value;
+				// alert(userurl);
+
 			  $.ajax({
 			  	dataType: 'json',
 			    url: 'https://api.clarifai.com/v1/tag/',
@@ -139,12 +137,13 @@
 			      xhr.setRequestHeader('Authorization', 'Bearer 7b9nddBbF6iv1vI1vdxLcjiBVtg5eW');
 			    },
 			    data: {
-			      url: 'http://www.clarifai.com/img/metro-north.jpg'
+			      url: userurl
 			    },
 			    success: function (response) { 
 			      console.log(response);
 			      for(i = 0; i < response.results[0].result.tag.classes.length; i++) {
 			      	console.log(response.results[0].result.tag.classes[i]);
+			      	document.getElementById("results-append").innerHTML += response.results[0].result.tag.classes[i] + " ";
 
 			      }
 
@@ -154,7 +153,15 @@
 			    },
 			  });
 			}
-			getPicInfo();
+
+			function pictureSearch(){
+				console.log("button clicked");
+				console.log(document.getElementById("userinput").value);
+				getPicInfo();
+			}
+
+			// document.getElementById("search").onclick = ;
+
 
 
 
