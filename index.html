@@ -132,6 +132,7 @@
 				var userurl = document.getElementById("userinput").value;
 				var img = document.createElement("img");
 				img.src = userurl;
+				img.id = "foodpic";
 				document.getElementById("results-append").appendChild(img);
 
 			  $.ajax({
