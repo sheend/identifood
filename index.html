@@ -31,10 +31,9 @@
 					  <span class="input-group-addon" id="sizing-addon2">url</span>
 					  <input id="userinput" type="text" class="form-control" placeholder="Image" aria-describedby="sizing-addon2">
 					</div>
-
 					<br>
 					<div class="btn-group" role="group" aria-label="...">
-					  <button id="search" type="submit" class="btn btn-default" form="form1" onclick="pictureSearch()">Identify Food</button>
+						<a href="#resultsSec"><button id="search" type="submit" class="btn btn-default" onclick="pictureSearch()">Identify Food</button></a>
 					</div>
 			</div>
 		</header>
@@ -102,11 +101,13 @@
 		</section>
 
 		<!-- results -->
+		<section id="resultsSec">
 		<div id="results" class="pictureresults">
-			<div>Results:</div>
+			<h2>Results</h2>
+			<hr class="small">
 			<div id="results-append"></div>
 		</div>
-		
+		</section>
 		<!-- Footer -->
 		<footer>
 			<div class="container">
@@ -161,12 +162,13 @@
 				console.log("button clicked");
 				console.log(document.getElementById("userinput").value);
 				getPicInfo();
+				wait();
+				/*$(document.getElementById("results")).scrollIntoView(true);
+				var top = $(document.getElementById("results")).position().top;
+				$(window).scrollTop( top );*/
 			}
 
 			// document.getElementById("search").onclick = ;
-
-
-
 
 		</script>
 	</body>
