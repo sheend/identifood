@@ -130,7 +130,9 @@
 
 			function getPicInfo() {
 				var userurl = document.getElementById("userinput").value;
-				// alert(userurl);
+				var img = document.createElement("img");
+				img.src = userurl;
+				document.getElementById("results-append").appendChild(img);
 
 			  $.ajax({
 			  	dataType: 'json',
