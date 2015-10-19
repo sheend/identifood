@@ -33,7 +33,7 @@
 					</div>
 					<br>
 					<div class="btn-group" role="group" aria-label="...">
-						<a href="#resultsSec"><button id="search" type="submit" class="btn btn-default" onclick="pictureSearch()">Identify Food</button></a>
+						<a href="#results"><button id="search" type="submit" class="btn btn-default" onclick="pictureSearch()">Identify Food</button></a>
 					</div>
 			</div>
 		</header>
@@ -100,14 +100,14 @@
 			<!-- /.container -->
 		</section>
 
-		<!-- results -->
-		<section id="resultsSec">
+		<!-- results
+		<section id="resultsSec">-->
 		<div id="results" class="pictureresults">
 			<h2>Results</h2>
 			<hr class="small">
 			<div id="results-append"></div>
 		</div>
-		</section>
+		<!--</section>-->
 		<!-- Footer -->
 		<footer>
 			<div class="container">
@@ -131,10 +131,12 @@
 
 			function getPicInfo() {
 				var userurl = document.getElementById("userinput").value;
+				var imgDiv = document.createElement("div");
 				var img = document.createElement("img");
 				img.src = userurl;
 				img.id = "foodpic";
-				document.getElementById("results-append").appendChild(img);
+				imgDiv.appendChild(img);
+				document.getElementById("results-append").appendChild(imgDiv);
 
 			  $.ajax({
 			  	dataType: 'json',
@@ -153,7 +155,6 @@
 			      	document.getElementById("results-append").innerHTML += response.results[0].result.tag.classes[i] + " ";
 
 			      }
-
 			    },
 			    error: function (err) { 
 			      console.log(err);
@@ -165,10 +166,6 @@
 				console.log("button clicked");
 				console.log(document.getElementById("userinput").value);
 				getPicInfo();
-				wait();
-				/*$(document.getElementById("results")).scrollIntoView(true);
-				var top = $(document.getElementById("results")).position().top;
-				$(window).scrollTop( top );*/
 			}
 
 			// document.getElementById("search").onclick = ;
