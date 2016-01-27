@@ -1,3 +1,6 @@
-# identifood
-A Dubhacks Project </br>
-The gh-pages branch is the working version
+identifood
+===============
+
+The Rundown
+----------------
+A simple web app that identifies tags related to a given image using Clarifai's image recognition API
